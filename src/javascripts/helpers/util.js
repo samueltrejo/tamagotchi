@@ -3,4 +3,16 @@ const printToDom = (divId, textToPrint) => {
   selectedDiv.innerHTML = textToPrint;
 };
 
-export default { printToDom };
+const simplify = (value) => {
+  let simplifiedValue = value;
+  if (simplifiedValue > 100) {
+    simplifiedValue = 100;
+  }
+
+  if (simplifiedValue < 0) {
+    simplifiedValue = 0;
+  }
+  return simplifiedValue;
+};
+
+export default { printToDom, simplify };
