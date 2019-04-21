@@ -1,5 +1,7 @@
 import util from '../helpers/util';
 
+import './styles/eat.scss';
+
 let full = 100;
 
 const printSection = () => {

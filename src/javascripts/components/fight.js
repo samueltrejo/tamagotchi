@@ -1,5 +1,7 @@
 import util from '../helpers/util';
 
+import './styles/fight.scss';
+
 let strength = 100;
 
 const printSection = () => {

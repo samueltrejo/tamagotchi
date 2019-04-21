@@ -1,5 +1,7 @@
 import util from '../helpers/util';
 
+import './styles/play.scss';
+
 let fun = 50;
 
 const printSection = () => {

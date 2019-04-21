@@ -1,5 +1,7 @@
 import util from '../helpers/util';
 
+import './styles/sleep.scss';
+
 let energy = 50;
 
 const printSection = () => {
