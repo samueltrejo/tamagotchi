@@ -12,9 +12,10 @@ const interaction = {
 };
 
 const petInteraction = (event) => {
-  const action = event.target.value;
+  const action = event.target.name;
+  const subAction = event.target.value;
   if (action !== undefined) {
-    interaction[action]();
+    interaction[action](subAction);
   }
 };
 

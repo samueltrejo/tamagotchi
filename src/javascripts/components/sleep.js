@@ -1,22 +1,26 @@
 import util from '../helpers/util';
 
-const energy = 50;
+import './styles/sleep.scss';
+
+let energy = 50;
 
 const printSection = () => {
   let domString = '';
   domString += '<div class="sleep-heading">';
   domString += '<div>Sleep</div>';
-  domString += `<div>${energy}</div>`;
+  domString += `<div id="energy-bar">${energy}</div>`;
   domString += '</div>';
   domString += '<div class="sleep-buttons">';
-  domString += '<button value="sleep">Healthy Food</button>';
-  domString += '<button value="sleep">Junk Food</button>';
+  domString += '<button name="sleep" value="50">Nap</button>';
+  domString += '<button name="sleep" value="60">Deep Sleep</button>';
   domString += '</div>';
   util.printToDom('sleep', domString);
 };
 
-const sleepAction = () => {
-  console.error(energy);
+const sleepAction = (subAction) => {
+  energy += parseInt(subAction, 10);
+  energy = util.simplify(energy);
+  util.printToDom('energy-bar', energy);
 };
 
 export default { printSection, sleepAction };

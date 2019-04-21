@@ -1,22 +1,26 @@
 import util from '../helpers/util';
 
-const fun = 50;
+import './styles/play.scss';
+
+let fun = 50;
 
 const printSection = () => {
   let domString = '';
   domString += '<div class="play-heading">';
   domString += '<div>Play</div>';
-  domString += `<div>${fun}</div>`;
+  domString += `<div id="fun-bar">${fun}</div>`;
   domString += '</div>';
   domString += '<div class="play-buttons">';
-  domString += '<button value="play">Healthy Food</button>';
-  domString += '<button value="play">Junk Food</button>';
+  domString += '<button name="play" value="50">Fun Activity</button>';
+  domString += '<button name="play" value="2">Lame Activity</button>';
   domString += '</div>';
   util.printToDom('play', domString);
 };
 
-const playAction = () => {
-  console.error(fun);
+const playAction = (subAction) => {
+  fun += parseInt(subAction, 10);
+  fun = util.simplify(fun);
+  util.printToDom('fun-bar', fun);
 };
 
 export default { printSection, playAction };
