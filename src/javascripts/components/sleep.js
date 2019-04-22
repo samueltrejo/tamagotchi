@@ -6,6 +6,7 @@ let energy = 50;
 
 const printSection = () => {
   let domString = '';
+  domString += '<div class="sleep-info">';
   domString += '<div class="sleep-heading">';
   domString += '<div>Sleep</div>';
   domString += `<div id="energy-bar">${energy}</div>`;
@@ -13,6 +14,7 @@ const printSection = () => {
   domString += '<div class="sleep-buttons">';
   domString += '<button name="sleep" value="50">Nap</button>';
   domString += '<button name="sleep" value="60">Deep Sleep</button>';
+  domString += '</div>';
   domString += '</div>';
   util.printToDom('sleep', domString);
 };

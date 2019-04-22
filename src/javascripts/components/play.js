@@ -6,6 +6,7 @@ let fun = 50;
 
 const printSection = () => {
   let domString = '';
+  domString += '<div class="play-info">';
   domString += '<div class="play-heading">';
   domString += '<div>Play</div>';
   domString += `<div id="fun-bar">${fun}</div>`;
@@ -13,6 +14,7 @@ const printSection = () => {
   domString += '<div class="play-buttons">';
   domString += '<button name="play" value="50">Fun Activity</button>';
   domString += '<button name="play" value="2">Lame Activity</button>';
+  domString += '</div>';
   domString += '</div>';
   util.printToDom('play', domString);
 };

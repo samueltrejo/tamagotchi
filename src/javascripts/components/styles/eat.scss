@@ -1,6 +1,19 @@
 #eat {
-  background-color: #0074D9;
+  box-sizing: border-box;
   width: 50%;
-  margin-left: 50px;
-  margin-top: 50px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 500px;
+  
+  .eat-info {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba($color: #0074D9, $alpha: .5);
+
+    .progress-bar {
+      border-radius: 60px;
+      overflow: hidden;
+      width: 100%;
+    }
+  }
 }

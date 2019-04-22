@@ -1,5 +1,12 @@
 #play {
-  background-color: #2ECC40;
-  margin-left: 50px;
+  box-sizing: border-box;
   width: 50%;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 500px;
+  
+  .play-info {
+    background-color: #2ECC40;
+
+  }
 }

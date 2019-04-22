@@ -6,6 +6,7 @@ let strength = 100;
 
 const printSection = () => {
   let domString = '';
+  domString += '<div class="fight-info">';
   domString += '<div class="fight-heading">';
   domString += '<div>Fight</div>';
   domString += `<div id="strength-bar">${strength}</div>`;
@@ -13,6 +14,7 @@ const printSection = () => {
   domString += '<div class="fight-buttons">';
   domString += '<button name="fight" value="1">Run Away</button>';
   domString += '<button name="fight" value="-10">Commit Violence</button>';
+  domString += '</div>';
   domString += '</div>';
   util.printToDom('fight', domString);
 };
