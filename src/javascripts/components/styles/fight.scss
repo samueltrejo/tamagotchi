@@ -1,4 +1,12 @@
 #fight {
-  background-color: #85144b;
+  box-sizing: border-box;
   width: 50%;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 500px;
+  
+  .fight-info {
+    background-color: #85144b;
+
+  }
 }
