@@ -6,14 +6,11 @@
   padding-right: 500px;
   
   .eat-info {
+    background-color: rgba($color: #0074D9, $alpha: 1.0);
+    color: white;
+    padding: 10px;
     border: 2px solid white;
     border-radius: 10px;
-    background-color: rgba($color: #0074D9, $alpha: .5);
-
-    .progress-bar {
-      border-radius: 60px;
-      overflow: hidden;
-      width: 100%;
-    }
+    min-width: 305px;
   }
 }

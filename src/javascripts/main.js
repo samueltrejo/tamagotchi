@@ -8,12 +8,16 @@ import pet from './components/pet';
 import '../styles/main.scss';
 
 const init = () => {
+  pet.petDomString();
   eat.printSection();
   play.printSection();
   fight.printSection();
   sleep.printSection();
   setup.attachEvents();
-  pet.petDomString();
 };
 
 init();
+
+document.addEventListener('click', (event) => {
+  console.error(event);
+});
