@@ -2,11 +2,15 @@
   box-sizing: border-box;
   width: 50%;
   padding-top: 100px;
-  padding-left: 100px;
-  padding-right: 500px;
+  padding-left: 500px;
+  padding-right: 100px;
   
   .play-info {
     background-color: #2ECC40;
-
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    min-width: 305px;
   }
 }
