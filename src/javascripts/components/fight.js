@@ -14,8 +14,8 @@ const printSection = () => {
   domString += '<progress id="strength-bar" max="100" value="100"></progress>';
   domString += '</div>';
   domString += '<div class="fight-buttons">';
-  domString += '<button name="fight" value="1">Run Away</button>';
-  domString += '<button name="fight" value="-10">Commit Violence</button>';
+  domString += '<button name="fight" value="1">Flee</button>';
+  domString += '<button name="fight" value="-10">Violence</button>';
   domString += '</div>';
   domString += '</div>';
   util.printToDom('fight', domString);
@@ -23,7 +23,7 @@ const printSection = () => {
 };
 
 const fightAction = (subAction) => {
-  strength += parseInt(subAction, 10);
+  strength += util.randomStatValue(parseInt(subAction, 10));
   strength = util.simplify(strength);
   util.printToDom('strength-stat', strength);
   document.getElementById('strength-bar').value = strength;

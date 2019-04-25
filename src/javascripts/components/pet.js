@@ -8,7 +8,7 @@ const overallHealth = [];
 const petDomString = () => {
   let domString = '';
   domString += '<div id="kill-pet" class="pet-container">';
-  domString += '<img src="../../../assets/pet.gif">';
+  domString += '<img src="../../../assets/pet.gi">';
   domString += '</div>';
   util.printToDom('pet', domString);
 };

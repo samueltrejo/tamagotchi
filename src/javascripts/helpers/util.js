@@ -15,4 +15,17 @@ const simplify = (value) => {
   return simplifiedValue;
 };
 
-export default { printToDom, simplify };
+const randomStatValue = (d) => {
+  const a = d - 3;
+  const b = d - 2;
+  const c = d - 1;
+  const e = d + 1;
+  const f = d + 2;
+  const g = d + 3;
+  const values = [a, a, a, b, b, b, c, c, d, d, e, e, f, g];
+  const randomValue = values[Math.floor((Math.random() * values.length))];
+  console.error(randomValue);
+  return randomValue;
+};
+
+export default { printToDom, simplify, randomStatValue };

@@ -15,7 +15,7 @@ const printSection = () => {
   domString += '</div>';
   domString += '<div class="sleep-buttons">';
   domString += '<button name="sleep" value="50">Nap</button>';
-  domString += '<button name="sleep" value="60">Deep Sleep</button>';
+  domString += '<button name="sleep" value="60">Siesta</button>';
   domString += '</div>';
   domString += '</div>';
   util.printToDom('sleep', domString);
@@ -23,7 +23,7 @@ const printSection = () => {
 };
 
 const sleepAction = (subAction) => {
-  energy += parseInt(subAction, 10);
+  energy += util.randomStatValue(parseInt(subAction, 10));
   energy = util.simplify(energy);
   util.printToDom('energy-stat', energy);
   document.getElementById('energy-bar').value = energy;
