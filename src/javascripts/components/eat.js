@@ -14,8 +14,8 @@ const printSection = () => {
   domString += '<progress id="fullness-bar" class="eat-progress" max="100" value="100"></progress>';
   domString += '</div>';
   domString += '<div class="eat-buttons">';
-  domString += '<button name="eat" value="10">Healthy Food</button>';
-  domString += '<button name="eat" value="-3">Junk Food</button>';
+  domString += '<button name="eat" value="10">Steak</button>';
+  domString += '<button name="eat" value="-3">Candy</button>';
   domString += '</div>';
   domString += '</div>';
   util.printToDom('eat', domString);
@@ -23,7 +23,7 @@ const printSection = () => {
 };
 
 const eatAction = (subAction) => {
-  full += parseInt(subAction, 10);
+  full += util.randomStatValue(parseInt(subAction, 10));
   full = util.simplify(full);
   util.printToDom('fullness-stat', full);
   document.getElementById('fullness-bar').value = full;

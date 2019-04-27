@@ -14,8 +14,8 @@ const printSection = () => {
   domString += '<progress id="fun-bar" max="100" value="50"></progress>';
   domString += '</div>';
   domString += '<div class="play-buttons">';
-  domString += '<button name="play" value="50">Fun Activity</button>';
-  domString += '<button name="play" value="2">Lame Activity</button>';
+  domString += '<button name="play" value="50">Catch</button>';
+  domString += '<button name="play" value="2">Monopoly</button>';
   domString += '</div>';
   domString += '</div>';
   util.printToDom('play', domString);
@@ -23,7 +23,7 @@ const printSection = () => {
 };
 
 const playAction = (subAction) => {
-  fun += parseInt(subAction, 10);
+  fun += util.randomStatValue(parseInt(subAction, 10));
   fun = util.simplify(fun);
   util.printToDom('fun-stat', fun);
   document.getElementById('fun-bar').value = fun;
