@@ -1,16 +1,76 @@
 #eat {
   box-sizing: border-box;
+  color: white;
   width: 50%;
   padding-top: 100px;
   padding-left: 100px;
   padding-right: 500px;
   
   .eat-info {
-    background-color: rgba($color: #0074D9, $alpha: 1.0);
-    color: white;
-    padding: 10px;
-    border: 2px solid white;
+    background-color: rgba($color: #18bed8, $alpha: 1.0);
     border-radius: 10px;
     min-width: 305px;
+
+    .eat-heading {
+      background-color: white;
+      color: black;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding-left: 15px;
+      box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: 0.2);
+    }
+
+    .eat-body {
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+
+      .eat-values {
+        width: 100%;
+        padding-left: 10px;
+
+        .eat-bar {
+          box-sizing: border-box;
+          border: 1px solid white;
+          border-radius: 5px;
+          margin-top: 10px;
+          padding-left: 2px;
+          padding-right: 2px;
+          height: 11px;
+          width: 100%;
+  
+          .eat-progress {
+            width: 100%;
+            height: 5px;
+            border-radius: 4px;
+            margin-top: 2px;
+            background-color: white;
+          }
+        }
+  
+        .eat-buttons {
+          display: flex;
+          margin-top: 5px;
+          justify-content: space-around;
+  
+          button {
+            color: white;
+            width: 45%;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    .eat-footer {
+      margin-top: 1rem;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      height: 22px;
+      background-color: white;
+      box-shadow: 0px -5px 5px rgba($color: #000000, $alpha: 0.2);
+    }
   }
 }
