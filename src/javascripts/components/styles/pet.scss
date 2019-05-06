@@ -1,9 +1,23 @@
 #progress {
+  box-sizing: border-box;
   width: 100%;
+  margin-bottom: 25px;
+  position: sticky;
+  top: 0;
+  background-color: rgba($color: #343a40, $alpha: 0.5);
+  color: white;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
 }
 
 #pet {
   position: absolute;
-  left: 30%;
+  top: -25px;
+  left: -100px;
   z-index: -10;
+}
+
+#quad {
+  width: 100%;
 }
