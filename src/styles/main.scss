@@ -1,13 +1,8 @@
 body {
   background-color: rgb(238, 172, 177);
 
-  #app {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
+  .container {
+    margin-left: 10%;
+    margin-right: 10%;
   }
-}
-
-progress {
-  width: 100%;
 }
