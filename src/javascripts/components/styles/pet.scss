@@ -18,6 +18,26 @@
   z-index: -10;
 }
 
-#quad {
+.quad {
   width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 860px) {
+  .quad {
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  #pet {
+    left: 100px;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
 }
